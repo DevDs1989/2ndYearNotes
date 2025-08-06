@@ -1,4 +1,4 @@
-**Class**: Operating Systems
+**Class**: [[Operating Systems]]
 
 **Title:** Computer System Overview
 
@@ -6,6 +6,7 @@
 
 **Time:** 09:10
 
+**Tags:** 
 
 # Topic
 

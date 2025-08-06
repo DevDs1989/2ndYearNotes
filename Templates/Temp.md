@@ -6,6 +6,7 @@
 
 **Time:** {{time}}
 
+**Tags:**
 
 # Topic
 

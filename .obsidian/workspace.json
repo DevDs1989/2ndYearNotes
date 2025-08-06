@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "83d14923d037b668",
+            "id": "d0ce2f3261d99070",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -179,17 +179,23 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "83d14923d037b668",
+  "active": "d0ce2f3261d99070",
   "lastOpenFiles": [
+    "Templates/Temp.md",
+    "README.md",
+    "DAA/Notes/Analysis Of Algorithms.md",
     "Operating Systems/Notes/Computer System Overview.md",
+    "DAA/Design and Analysis of Algorithms (DAA).md",
+    "Operating Systems/Operating Systems.md",
     "DMBS/Notes/2. ER Models.md",
+    "DMBS/DBMS.md",
+    "DMBS/Notes/1. Introduction.md",
+    "DAA/Notes",
+    "DAA",
     "Operating Systems/Notes",
     "Operating Systems",
-    "DMBS/Notes/1. Introduction.md",
-    "README.md",
     "DMBS/Notes",
     "DMBS",
-    "Templates/Temp.md",
     "Templates"
   ]
 }
