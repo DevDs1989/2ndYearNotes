@@ -786,7 +786,7 @@
     }
   ],
   "customCategories": [],
-  "selectedCategoryId": "sequenceDiagram",
+  "selectedCategoryId": "ganttChart",
   "defaultCategorySortOrders": {
     "sequenceDiagram": 1,
     "flowchart": 0,
