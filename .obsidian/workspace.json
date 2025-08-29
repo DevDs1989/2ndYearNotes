@@ -4,31 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "0534b0eef5bfd473",
+        "id": "3f51dbed6e6ab228",
         "type": "tabs",
         "children": [
           {
-            "id": "d7d0b680f7b9e265",
+            "id": "616dabcef924a8ac",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Elements of AI/Lab Excercises/Basics of Python Programming with pandas and matplotlib.md",
+                "file": "DAA/Notes/Recursive Functions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basics of Python Programming with pandas and matplotlib"
+              "title": "Recursive Functions"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "307af34b994aaa51",
+        "type": "tabs",
+        "children": [
           {
-            "id": "8cd98c1d28f2d720",
+            "id": "2a3a8bc4edbc2385",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "DAA/Notes/Recursive Functions.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Recursive Functions"
             }
           }
         ]
@@ -150,17 +160,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Operating Systems/Notes/Process Time Management.md",
+                "file": "DMBS/Notes/Entity Relation Model.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Process Time Management"
+              "title": "Outline of Entity Relation Model"
             }
           },
           {
-            "id": "07abcc32c34ce973",
+            "id": "91a125cc5655e9a1",
             "type": "leaf",
             "state": {
               "type": "mermaid-toolbar-view",
@@ -189,13 +199,28 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "d7d0b680f7b9e265",
+  "active": "616dabcef924a8ac",
   "lastOpenFiles": [
-    "Elements of AI/AI Lab.md",
-    "Templates/Temp.md",
-    "Templates/OS PT Table.md",
-    "Templates/AI ML Lab Template.md",
+    "DAA/Notes/Recursive Functions.md",
+    "DAA/Notes/Class of Functions.md",
+    "Elements of AI/Lab Excercises/Create a simple program for Regression Problem.md",
+    "Elements of AI/Notes/Logical Systems.md",
+    "Elements of AI/Notes/Linear Regression.md",
     "Elements of AI/Lab Excercises/Basics of Python Programming with pandas and matplotlib.md",
+    "Templates/AI ML Lab Template.md",
+    "imgs/Pasted image 20250826131223.png",
+    "imgs",
+    "imgs/Pasted image 20250826131211.png",
+    "DMBS/Notes/1. Introduction.md",
+    "Templates/Temp.md",
+    "imgs/Pasted image 20250826131252.png",
+    "imgs/Pasted image 20250826131238.png",
+    "README.md",
+    "DMBS/Notes/Entity Relation Model.md",
+    "Operating Systems/Notes/Thread Scheduling.md",
+    "DAA/Notes/Asymptotic Notation.md",
+    "Elements of AI/AI Lab.md",
+    "Templates/OS PT Table.md",
     "Operating Systems/Notes/Process Time Management.md",
     "Elements of AI/Elements of AI.md",
     "Misc Files.md",
@@ -205,27 +230,16 @@
     "DAA/Notes/Framework of Algorithm Analysis.md",
     "Operating Systems/Notes/Process.md",
     "DAA/Design and Analysis of Algorithms (DAA).md",
-    "DAA/Notes/Asymptotic Notation.md",
     "DAA/Notes/Random Access Machines Vs Real Computers.md",
     "Operating Systems/Notes/Types Of Operating Systems.md",
     "Operating Systems/Notes/Computer System Overview.md",
-    "Operating Systems/Notes/Stages in System Booting.md",
     "Elements of AI/Notes",
     "Elements of AI",
-    "Operating Systems/Operating Systems.md",
-    "README.md",
-    "DMBS/Notes/Select Query.md",
-    "DMBS/Notes/1. Introduction.md",
-    "DAA/Notes/Analysis Of Algorithms.md",
-    "DMBS/Notes/Introduction to Data Base.md",
-    "DMBS/Notes/2. ER Models.md",
-    "DMBS/DBMS.md",
     "DAA/Notes",
     "DAA",
     "Operating Systems/Notes",
     "Operating Systems",
     "DMBS/Notes",
-    "DMBS",
-    "Templates"
+    "DMBS"
   ]
 }

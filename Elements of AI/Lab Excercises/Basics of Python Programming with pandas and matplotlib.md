@@ -6,7 +6,7 @@
 
 ## Basics of Python Programming with *matplotlib*
 #### Introduction
-
+This experiment demonstrates basic data operations and visualization techniques using Python's **Pandas** and **Matplotlib** libraries. The script covers creating and manipulating data structures, exporting data to CSV, filtering and sorting, and generating several types of plots.
 
 #### Code
 ```python
@@ -63,6 +63,14 @@ plt.show()
 
 ```
 #### Results 
+![[Pasted image 20250826131211.png]]
+![[Pasted image 20250826131223.png]]
+![[Pasted image 20250826131238.png]]
+![[Pasted image 20250826131252.png]]
 #### Code and result explanation
+The provided code demonstrates fundamental operations in data manipulation and visualisation using Python’s pandas and matplotlib libraries. It begins by creating a pandas Series with custom indices, followed by constructing a DataFrame from a dictionary containing names and ages. The DataFrame is then saved to a CSV file for external use. Next, the code filters the DataFrame to include only rows where the age is greater than 30 and sorts these filtered results in ascending order. Visualisation techniques are showcased through three plots: a bar plot representing ages for each person, a line plot illustrating a trend between two lists, and a histogram depicting the frequency distribution of a sample data set.
+
 #### Errors found
+
+I did not come across any errors
 

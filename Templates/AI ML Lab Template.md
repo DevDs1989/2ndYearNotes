@@ -1,15 +1,8 @@
-
-
-**Subject:**
-
+**Name:** Devesh Chandra Srivastava
+**SAP ID:** 590017127
+**Subject:** [[Elements of AI]]
 **Date:** {{date}}
-
 **Time:** {{time}}
-
-**Experiment Name:** 
-
-**Related to:** 
-
 #### {{title}}
 #### Introduction
 #### Code
