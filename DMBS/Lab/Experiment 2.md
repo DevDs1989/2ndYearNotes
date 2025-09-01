@@ -13,7 +13,7 @@ The company is organised into departments. Each department has a unique name, a 
 - `o|--o{` Optional one-to-many
 
 
-```merm
+```mermaid
 ---
   darkMode: true
 ---
