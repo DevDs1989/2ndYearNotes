@@ -1,5 +1,13 @@
 [
   "mermaid-tools",
   "better-export-pdf",
-  "mermaid-themes"
+  "mermaid-themes",
+  "autocorrect-formatter",
+  "easy-typing-obsidian",
+  "file-explorer-plus",
+  "obsidian-git",
+  "obsidian-icon-folder",
+  "templater-obsidian",
+  "various-complements",
+  "obsidian-trash-explorer"
 ]
