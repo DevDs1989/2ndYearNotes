@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DAA/Lab/Lab 2.md",
+                "file": "DAA/Lab/Lab 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lab 2"
+              "title": "Lab 3"
             }
           }
         ],
@@ -208,7 +208,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -231,11 +231,15 @@
   },
   "active": "f1641862275a0637",
   "lastOpenFiles": [
+    "DAA/Lab/Lab 3.md",
+    "Templates/DAA Lab Template.md",
+    "Templates/OS PT Table.md",
+    "Templates/AI ML Lab Template.md",
+    "DAA/Lab/Lab 2.md",
     "Pasted image 20250905021956.png",
     "DAA/Lab/Lab 1.md",
     "imgs/Pasted image 20250905013335.png",
     "imgs/Pasted image 20250905013336.png",
-    "DAA/Lab/Lab 2.md",
     "DAA/Lab",
     "Untitled.base",
     "DMBS/Lab/Experiment 1.md",
@@ -256,7 +260,6 @@
     "DAA/Notes/Class of Functions.md",
     "Elements of AI/Notes/Logical Systems.md",
     "Elements of AI/Notes/Linear Regression.md",
-    "Templates/AI ML Lab Template.md",
     "imgs",
     "DMBS/Notes/1. Introduction.md",
     "Templates/Temp.md",
@@ -264,9 +267,7 @@
     "DMBS/Notes/Entity Relation Model.md",
     "Operating Systems/Notes/Thread Scheduling.md",
     "DAA/Notes/Asymptotic Notation.md",
-    "Templates/OS PT Table.md",
     "Elements of AI/Elements of AI.md",
-    "Misc Files.md",
     "Elements of AI/Lab Excercises",
     "Elements of AI/Notes",
     "Elements of AI",
