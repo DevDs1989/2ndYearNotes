@@ -42,7 +42,7 @@
               "type": "markdown",
               "state": {
                 "file": "DMBS/Lab/Experiment 2.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -215,7 +215,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5
+    "width": 312.5
   },
   "left-ribbon": {
     "hiddenItems": {

@@ -14,108 +14,108 @@ The company is organised into departments. Each department has a unique name, a 
 
 
 ```mermaid
----
-  darkMode: true
----
+
 erDiagram
+
+
 
 DEPARTMENT {
 
-int departmentID "PK"
+int department_id PK ""
 
-string departmentName
+string department_name ""
 
-int manager_ssn "FK"
+string manager_ssn FK ""
 
-date manager_start_date
+date manager_start_date ""
 
 }
 
 LOCATION {
 
-string name "PK"
+string location_name PK ""
 
 }
 
 DEPARTMENT_LOCATION {
 
-int dept_number "FK"
+int department_id FK ""
 
-string location_name "FK"
+string location_name FK ""
 
 }
 
 PROJECT {
 
-int number "PK"
+int project_id PK ""
 
-string name
+string project_name ""
 
-string location_name "FK"
+string location_name FK ""
+
+int department_id FK ""
 
 }
 
 EMPLOYEE {
 
-string ssn "PK"
+string employee_ssn PK ""
 
-string name
+string name ""
 
-string address
+string address ""
 
-float salary
+float salary ""
 
-string sex
+string sex ""
 
-date birth_date
+date birth_date ""
 
-int dept_number "FK"
+int department_id FK ""
 
-string supervisor_ssn "FK"
+string supervisor_ssn FK ""
 
 }
 
 WORKS_ON {
 
-string emp_ssn "FK"
+string employee_ssn FK ""
 
-int project_number "FK"
+int project_id FK ""
 
-float hours_per_week
+float hours_per_week ""
 
 }
 
 DEPENDENT {
 
-string emp_ssn "FK"
+string employee_ssn FK ""
 
-string first_name "PK"
+string dependent_name PK ""
 
-string sex
+string sex ""
 
-date birth_date
+date birth_date ""
 
-string relationship
+string relationship ""
 
 }
 
-  
+DEPARTMENT||--o|EMPLOYEE:"manages"
 
-DEPARTMENT ||--o| EMPLOYEE : manages
+DEPARTMENT||--o{DEPARTMENT_LOCATION:"has"
 
-DEPARTMENT ||--o{ DEPARTMENT_LOCATION : has
+DEPARTMENT||--o{PROJECT:"controls"
 
-DEPARTMENT ||--o{ PROJECT : controls
+DEPARTMENT||--o{EMPLOYEE:"includes"
 
-DEPARTMENT ||--o{ EMPLOYEE : includes
+DEPARTMENT_LOCATION}o--||LOCATION:"located_at"
 
-DEPARTMENT_LOCATION }o--|| LOCATION : located_at
+EMPLOYEE||--|{WORKS_ON:"works_on"
 
-EMPLOYEE ||--|{ WORKS_ON : works_on
+PROJECT||--|{WORKS_ON:"assigned_to"
 
-PROJECT ||--|{ WORKS_ON : assigned_to
+EMPLOYEE||--o{DEPENDENT:"has"
 
-EMPLOYEE ||--o{ DEPENDENT : has
-
-EMPLOYEE ||--o| EMPLOYEE : supervises
+EMPLOYEE||--o|EMPLOYEE:"supervises"
 ```
