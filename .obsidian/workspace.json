@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DAA/Lab/Lab 3.md",
+                "file": "DMBS/Lab/Experiment 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lab 3"
+              "title": "Experiment 2"
             }
           }
         ],
@@ -152,25 +152,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DMBS/Notes/2. ER Models.md",
+                "file": "Elements of AI/Notes/3 Stages of Ai.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2. ER Models"
-            }
-          },
-          {
-            "id": "66b4db37bab1da6f",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "Outgoing links from 3 Stages of Ai"
             }
           },
           {
@@ -181,6 +168,21 @@
               "state": {},
               "icon": "git-pull-request",
               "title": "Source Control"
+            }
+          },
+          {
+            "id": "66b4db37bab1da6f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -199,16 +201,17 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Elements of AI/Notes/3 Stages of Ai.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of 3 Stages of Ai"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -231,6 +234,7 @@
   },
   "active": "f1641862275a0637",
   "lastOpenFiles": [
+    "Elements of AI/Notes/3 Stages of Ai.md",
     "DAA/Lab/Lab 3.md",
     "Templates/DAA Lab Template.md",
     "Templates/OS PT Table.md",
@@ -267,7 +271,6 @@
     "DMBS/Notes/Entity Relation Model.md",
     "Operating Systems/Notes/Thread Scheduling.md",
     "DAA/Notes/Asymptotic Notation.md",
-    "Elements of AI/Elements of AI.md",
     "Elements of AI/Lab Excercises",
     "Elements of AI/Notes",
     "Elements of AI",
