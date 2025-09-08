@@ -102,7 +102,6 @@ flag[0] = flase
 - `turn -> priority`
 - `flag -> intent`
 - Solves bounded condition, mutual exclusion, progress
-- 
 ```c++
 boolean flag[2];
 int turn;

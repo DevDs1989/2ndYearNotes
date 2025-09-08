@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBMS/Notes/RC and RA.md",
+                "file": "DBMS/Lab/Experiment 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RC and RA"
+              "title": "Experiment 3"
             }
           }
         ],
@@ -232,12 +232,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "ae6f3ee0385485b9",
+  "active": "f1641862275a0637",
   "lastOpenFiles": [
-    "DBMS/Notes/Select Query.md",
-    "DBMS/Notes/RC and RA.md",
-    "DAA/Notes/Divide and Conquer.md",
+    "Pasted image 20250908151348.png",
     "DBMS/Lab/Experiment 2.md",
+    "DBMS/Lab/Experiment 3.md",
+    "Elements of AI/Lab Excercises/Basics of Python Programming with pandas and matplotlib.md",
+    "Untitled 1.base",
+    "DBMS/Notes/RC and RA.md",
+    "Operating Systems/Notes/Software Solutions to CS problems.md",
+    "DBMS/Notes/Select Query.md",
+    "DAA/Notes/Divide and Conquer.md",
     "Elements of AI/Notes/3 Stages of Ai.md",
     "DAA/Lab/Lab 3.md",
     "Templates/DAA Lab Template.md",
@@ -258,24 +263,19 @@
     "imgs/Pasted image 20250826131223.png",
     "imgs/Pasted image 20250826131211.png",
     "DAA/Design and Analysis of Algorithms (DAA).md",
-    "Operating Systems/Notes/Software Solutions to CS problems.md",
     "DAA/Notes/Recursive Functions.md",
     "Operating Systems/Notes/Process Time Management.md",
     "DBMS/Lab",
-    "Elements of AI/Lab Excercises/Basics of Python Programming with pandas and matplotlib.md",
     "Elements of AI/Lab Excercises/Create a simple program for Regression Problem.md",
     "DAA/Notes/Class of Functions.md",
     "Elements of AI/Notes/Logical Systems.md",
     "Elements of AI/Notes/Linear Regression.md",
     "imgs",
     "DBMS/Notes/1. Introduction.md",
-    "Templates/Temp.md",
-    "README.md",
     "Elements of AI/Lab Excercises",
     "Elements of AI/Notes",
     "Elements of AI",
     "DAA/Notes",
-    "DAA",
-    "Operating Systems/Notes"
+    "DAA"
   ]
 }

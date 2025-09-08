@@ -21,7 +21,9 @@
 --- 
 # Notes
 
-
+$$
+\pi Name(\sigma_{age>17 \space\&\space SapID\space = \space2}(Student))
+$$
 
 ---
 # Work
