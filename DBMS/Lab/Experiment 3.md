@@ -1,17 +1,12 @@
 # DBMS Lab Experiment 06
 ## Use of Inbuilt Functions and Relational Algebra Operations
 ---
-- **Course:**[[DBMS]]
-- **Name:**  Devesh Chandra Srivastava
+- **Course:** [[DBMS]]
+- **Name:** Devesh Chandra Srivastava
 - **SapID:** 590017127
 - **Batch:** 66
-- **Semester:** 3 rd
+- **Semester:** 3
 - **Date:** 2025-09-08
-
----
-
-## Objective
-To understand the use of inbuilt functions and relational algebra with SQL queries by implementing various operations on the COMPANY database schema.
 
 ---
 
@@ -91,83 +86,85 @@ $$\pi_{Fname, Lname, Salary}(EMPLOYEE)$$
 
 **SQL Query:**
 ```sql
-SELECT Fname, Lname, Salary
-FROM EMPLOYEE
-ORDER BY Salary DESC;
+SELECT fname, lname, salary
+FROM employee
+ORDER BY salary DESC;
 ```
 
 **Result Evidence:**
-![[Pasted image 20250908151348.png]]
+![[Pasted image 20250908153632.png]]
 
-
-**Explanation:** This query projects the first name, last name, and salary columns from the EMPLOYEE relation, returning all employee records with these three attributes.
+**Explanation:** This query projects the first name, last name, and salary columns from the EMPLOYEE relation, returning all Indian employee records with these three attributes.
 
 ---
 
-### Q 2. Retrieve the names of all projects located in Houston.
+### Q 2. Retrieve the names of all projects located in Mumbai.
 
-**Problem Statement:** Retrieve the names of all projects located in Houston.
+**Problem Statement:** Retrieve the names of all projects located in Mumbai.
 
 **Relational Algebra:**
-$$\pi_{Pname}(\sigma_{Plocation='Houston'}(PROJECT))$$
+$$\pi_{Pname}(\sigma_{Plocation='Mumbai'}(PROJECT))$$
 
 **SQL Query:**
 ```sql
-SELECT Pname
-FROM PROJECT
-WHERE UPPER(Plocation) = UPPER('Houston');
+SELECT pname
+FROM project
+WHERE UPPER(plocation) = UPPER('Mumbai');
 ```
 
 **Result Evidence:**
+![[Pasted image 20250908153830.png]]
 
-
-**Explanation:** This query selects projects where the location matches 'Houston', using UPPER () function for case-insensitive comparison.
+**Explanation:** This query selects projects where the location matches 'Mumbai', using UPPER () function for case-insensitive comparison.
 
 ---
 
-### Q 3. List the names and birth dates of employees whose salary is greater than 50,000.
+### Q 3. List the names and birth dates of employees whose salary is greater than 100,000.
 
-**Problem Statement:** List the names and birth dates of employees whose salary is greater than 50,000.
+**Problem Statement:** List the names and birth dates of employees whose salary is greater than 1,00,000 (1 Lakh).
 
 **Relational Algebra:**
-$$\pi_{Fname, Minit, Lname, Bdate}(\sigma_{Salary > 50000}(EMPLOYEE))$$
+$$\pi_{Fname, Minit, Lname, Bdate}(\sigma_{Salary > 100000}(EMPLOYEE))$$
 
 **SQL Query:**
 ```sql
-SELECT Fname, Minit, Lname, Bdate
-FROM EMPLOYEE
-WHERE Salary > 50000;
+SELECT fname, minit, lname, bdate, salary
+FROM employee
+WHERE salary > 100000
+ORDER BY salary DESC;
 ```
 
 **Result Evidence:**
+![[Pasted image 20250908153856.png]]
 
 
-**Explanation:** This query filters employees with salary greater than 50,000 and projects their names and birth dates.
+**Explanation:** This query filters employees with salary greater than 1,00,000 and projects their names and birth dates.
 
 ---
 
-### Q 4. Retrieve the names of all employees in department 5 who work more than 10 hours per week on the 'ProductX' project.
+### Q 4. Retrieve the names of all employees in department 5 who work more than 10 hours per week on the 'DigitalIndia' project.
 
-**Problem Statement:** Retrieve the names of all employees in department 5 who work more than 10 hours per week on the 'ProductX' project.
+**Problem Statement:** Retrieve the names of all employees in department 5 who work more than 10 hours per week on the 'DigitalIndia' project.
 
 **Relational Algebra:**
-$$\pi_{Fname, Minit, Lname}(\sigma_{Dno=5}(EMPLOYEE) \bowtie_{Ssn=Essn} \sigma_{Hours>10}(WORKS\_ON) \bowtie_{Pno=Pnumber} \sigma_{Pname='ProductX'}(PROJECT))$$
+$$\pi_{Fname, Minit, Lname}(\sigma_{Dno=5}(EMPLOYEE) \bowtie_{Ssn=Essn} \sigma_{Hours>10}(WORKS\_ON) \bowtie_{Pno=Pnumber} \sigma_{Pname='DigitalIndia'}(PROJECT))$$
 
 **SQL Query:**
 ```sql
-SELECT DISTINCT e.Fname, e.Minit, e.Lname
-FROM EMPLOYEE e
-JOIN WORKS_ON w ON w.Essn = e.Ssn
-JOIN PROJECT p ON p.Pnumber = w.Pno
-WHERE e.Dno = 5
-  AND UPPER(p.Pname) = UPPER('ProductX')
-  AND w.Hours > 10;
+SELECT DISTINCT e.fname, e.minit, e.lname, w.hours
+FROM employee e
+INNER JOIN works_on w ON w.essn = e.ssn
+INNER JOIN project p ON p.pnumber = w.pno
+WHERE e.dno = 5
+  AND UPPER(p.pname) = UPPER('DigitalIndia')
+  AND w.hours > 10;
 ```
 
 **Result Evidence:**
 
 
-**Explanation:** This query joins three relations to find employees in department 5 working more than 10 hours on ProductX project.
+
+**Explanation:** This query joins three relations to find employees in department 5 working more than 10 hours on DigitalIndia project.
 
 ---
 
@@ -180,39 +177,42 @@ $$\pi_{Fname, Minit, Lname}(EMPLOYEE \bowtie_{Ssn=Essn \land Fname=Dependent\_na
 
 **SQL Query:**
 ```sql
-SELECT DISTINCT e.Fname, e.Minit, e.Lname
-FROM EMPLOYEE e
-JOIN DEPENDENT d ON e.Ssn = d.Essn
-WHERE UPPER(e.Fname) = UPPER(d.Dependent_name);
+SELECT DISTINCT e.fname, e.minit, e.lname, d.dependent_name
+FROM employee e
+INNER JOIN dependent d ON e.ssn = d.essn
+WHERE UPPER(e.fname) = UPPER(d.dependent_name);
 ```
 
 **Result Evidence:**
+
 
 
 **Explanation:** This query finds employees whose first name matches any of their dependents' names using case-insensitive comparison.
 
 ---
 
-### Q 6. Find the names of employees who are directly supervised by 'Franklin Wong'.
+### Q 6. Find the names of employees who are directly supervised by 'Priya Patel'.
 
-**Problem Statement:** Find the names of employees who are directly supervised by 'Franklin Wong'.
+**Problem Statement:** Find the names of employees who are directly supervised by 'Priya Patel'.
 
 **Relational Algebra:**
-$$\pi_{E2.Fname, E2.Minit, E2.Lname}(\rho_{E1}(\sigma_{Fname='Franklin' \land Lname='Wong'}(EMPLOYEE)) \bowtie_{E1.Ssn=E2.Super\_ssn} \rho_{E2}(EMPLOYEE))$$
+$$\pi_{E2.Fname, E2.Minit, E2.Lname}(\rho_{E1}(\sigma_{Fname='Priya' \land Lname='Patel'}(EMPLOYEE)) \bowtie_{E1.Ssn=E2.Super\_ssn} \rho_{E2}(EMPLOYEE))$$
 
 **SQL Query:**
 ```sql
-SELECT e2.Fname, e2.Minit, e2.Lname
-FROM EMPLOYEE e1
-JOIN EMPLOYEE e2 ON e1.Ssn = e2.Super_ssn
-WHERE UPPER(e1.Fname) = UPPER('Franklin')
-  AND UPPER(e1.Lname) = UPPER('Wong');
+SELECT e2.fname, e2.minit, e2.lname,
+       CONCAT(e1.fname, ' ', e1.lname) AS supervisor
+FROM employee e1
+INNER JOIN employee e2 ON e1.ssn = e2.super_ssn
+WHERE UPPER(e1.fname) = UPPER('Priya')
+  AND UPPER(e1.lname) = UPPER('Patel');
 ```
 
 **Result Evidence:**
 
 
-**Explanation:** This self-join query finds all employees supervised by Franklin Wong by matching supervisor SSN.
+
+**Explanation:** This self-join query finds all employees supervised by Priya Patel by matching supervisor SSN.
 
 ---
 
@@ -225,20 +225,22 @@ $$\pi_{Fname, Minit, Lname}((\pi_{Essn}(WORKS\_ON) \div \pi_{Pnumber}(PROJECT)) 
 
 **SQL Query:**
 ```sql
-SELECT e.Fname, e.Minit, e.Lname
-FROM EMPLOYEE e
+SELECT e.fname, e.minit, e.lname
+FROM employee e
 WHERE NOT EXISTS (
-    SELECT p.Pnumber
-    FROM PROJECT p
+    SELECT p.pnumber
+    FROM project p
     WHERE NOT EXISTS (
-        SELECT w.Pno
-        FROM WORKS_ON w
-        WHERE w.Essn = e.Ssn AND w.Pno = p.Pnumber
+        SELECT w.pno
+        FROM works_on w
+        WHERE w.essn = e.ssn AND w.pno = p.pnumber
     )
 );
 ```
 
 **Result Evidence:**
+
+
 
 **Explanation:** This query uses division operation (implemented with double NOT EXISTS) to find employees working on all projects.
 
@@ -253,47 +255,49 @@ $$\pi_{Fname, Minit, Lname}(EMPLOYEE - \pi_{Ssn}(EMPLOYEE \bowtie_{Ssn=Essn} WOR
 
 **SQL Query:**
 ```sql
-SELECT e.Fname, e.Minit, e.Lname
-FROM EMPLOYEE e
-WHERE e.Ssn NOT IN (
-    SELECT DISTINCT w.Essn
-    FROM WORKS_ON w
-    WHERE w.Essn IS NOT NULL
+SELECT e.fname, e.minit, e.lname
+FROM employee e
+WHERE e.ssn NOT IN (
+    SELECT DISTINCT w.essn
+    FROM works_on w
+    WHERE w.essn IS NOT NULL
 );
 ```
 
 **Result Evidence:**
 
 
+
 **Explanation:** This query finds employees whose SSN does not appear in the WORKS_ON relation.
 
 ---
 
-### Q 9. Retrieve the names and addresses of all employees who work on at least one project located in Houston but whose department has no location in Houston.
+### Q 9. Retrieve the names and addresses of all employees who work on at least one project located in Mumbai but whose department has no location in Mumbai.
 
-**Problem Statement:** Retrieve the names and addresses of all employees who work on at least one project located in Houston but whose department has no location in Houston.
+**Problem Statement:** Retrieve the names and addresses of all employees who work on at least one project located in Mumbai but whose department has no location in Mumbai.
 
 **Relational Algebra:**
-$$\pi_{Fname, Minit, Lname, Address}((EMPLOYEE \bowtie_{Ssn=Essn} WORKS\_ON \bowtie_{Pno=Pnumber} \sigma_{Plocation='Houston'}(PROJECT)) - (EMPLOYEE \bowtie_{Dno=Dnumber} \sigma_{Dlocation='Houston'}(DEPT\_LOCATIONS)))$$
+$$\pi_{Fname, Minit, Lname, Address}((EMPLOYEE \bowtie_{Ssn=Essn} WORKS\_ON \bowtie_{Pno=Pnumber} \sigma_{Plocation='Mumbai'}(PROJECT)) - (EMPLOYEE \bowtie_{Dno=Dnumber} \sigma_{Dlocation='Mumbai'}(DEPT\_LOCATIONS)))$$
 
 **SQL Query:**
 ```sql
-SELECT DISTINCT e.Fname, e.Minit, e.Lname, e.Address
-FROM EMPLOYEE e
-JOIN WORKS_ON w ON e.Ssn = w.Essn
-JOIN PROJECT p ON w.Pno = p.Pnumber
-WHERE UPPER (p.Plocation) = UPPER ('Houston')
-  AND e.Dno NOT IN (
-    SELECT dl. Dnumber
-    FROM DEPT_LOCATIONS dl
-    WHERE UPPER (dl. Dlocation) = UPPER ('Houston')
+SELECT DISTINCT e.fname, e.minit, e.lname, e.address
+FROM employee e
+INNER JOIN works_on w ON e.ssn = w.essn
+INNER JOIN project p ON w.pno = p.pnumber
+WHERE UPPER(p.plocation) = UPPER('Mumbai')
+  AND e.dno NOT IN (
+    SELECT dl.dnumber
+    FROM dept_locations dl
+    WHERE UPPER(dl.dlocation) = UPPER('Mumbai')
   );
 ```
 
 **Result Evidence:**
 
 
-**Explanation:** This query finds employees working on Houston projects whose departments don't have Houston locations.
+
+**Explanation:** This query finds employees working on Mumbai projects whose departments don't have Mumbai locations.
 
 ---
 
@@ -306,17 +310,18 @@ $$\pi_{Lname}((\pi_{Mgr\_ssn}(DEPARTMENT) \bowtie_{Mgr\_ssn=Ssn} EMPLOYEE) - \pi
 
 **SQL Query:**
 ```sql
-SELECT DISTINCT e.Lname
-FROM EMPLOYEE e
-JOIN DEPARTMENT d ON e.Ssn = d.Mgr_ssn
-WHERE e.Ssn NOT IN (
-    SELECT DISTINCT dep. Essn
-    FROM DEPENDENT dep
-    WHERE dep. Essn IS NOT NULL
+SELECT DISTINCT e.fname, e.lname, d.dname
+FROM employee e
+INNER JOIN department d ON e.ssn = d.mgr_ssn
+WHERE e.ssn NOT IN (
+    SELECT DISTINCT dep.essn
+    FROM dependent dep
+    WHERE dep.essn IS NOT NULL
 );
 ```
 
 **Result Evidence:**
+
 
 
 **Explanation:** This query finds department managers who don't appear in the DEPENDENT relation as having any dependents.
