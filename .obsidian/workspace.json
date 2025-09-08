@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DMBS/Lab/Experiment 2.md",
-                "mode": "preview",
+                "file": "DAA/Notes/Divide and Conquer.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Experiment 2"
+              "title": "Divide and Conquer"
             }
           }
         ],
@@ -228,12 +228,14 @@
       "command-palette:Open command palette": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "obsidian-git:Open Git source control": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-trash-explorer:Open trash explorer": false
+      "obsidian-trash-explorer:Open trash explorer": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "f1641862275a0637",
   "lastOpenFiles": [
+    "DMBS/Lab/Experiment 2.md",
+    "DAA/Notes/Divide and Conquer.md",
     "Elements of AI/Notes/3 Stages of Ai.md",
     "DAA/Lab/Lab 3.md",
     "Templates/DAA Lab Template.md",
@@ -256,7 +258,6 @@
     "DAA/Design and Analysis of Algorithms (DAA).md",
     "Operating Systems/Notes/Software Solutions to CS problems.md",
     "DAA/Notes/Recursive Functions.md",
-    "DMBS/Lab/Experiment 2.md",
     "Operating Systems/Notes/Process Time Management.md",
     "DMBS/Lab",
     "Elements of AI/Lab Excercises/Basics of Python Programming with pandas and matplotlib.md",
@@ -270,7 +271,6 @@
     "README.md",
     "DMBS/Notes/Entity Relation Model.md",
     "Operating Systems/Notes/Thread Scheduling.md",
-    "DAA/Notes/Asymptotic Notation.md",
     "Elements of AI/Lab Excercises",
     "Elements of AI/Notes",
     "Elements of AI",
