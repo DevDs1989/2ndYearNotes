@@ -135,8 +135,8 @@ Process scheduling criteria are the standards used by an operating system to det
 #### 1. Preemptive Scheduling
 
 ```mermaid
-flowchart L
-R["Running]
+flowchart LR
+["Running]
 
 ```
 

@@ -21,6 +21,9 @@
 --- 
 # Notes
 
+- Mutual Exclusion
+- Progress
+- Bounded Condition
 ## Dekker's Algo
 ### First Version
 - Shared thread: Signal turn -> priority
@@ -141,6 +144,44 @@ int main(){
 	parbegin(P0, P1);
 
 }
+```
+
+## Peterson's Algorithm 
+
+```c++
+boolean flag[2];
+int turn;
+void P0(){
+	while(true){
+		flag[0] = true;
+		turn = 1;
+		while(flag[1] && turn == 1){
+			#do nothing
+		}
+		CRITICAL SECTION
+		flag[0] = flase
+	}
+}
+void P1(){
+	while(true){
+		flag[1] = true;
+		turn = 0;
+		while(flag[0] && turn == 0){
+			#do nothing
+		}
+		CRITICAL SECTION
+		flag[1] = flase
+	}
+}
+
+
+int main(){
+	flag[0] = false;
+	flag[1] = true;
+	parbegin(P0,P1)
+}
+
+
 ```
 
 ---

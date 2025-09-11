@@ -161,8 +161,7 @@ WHERE e.dno = 5
 ```
 
 **Result Evidence:**
-
-
+![[Pasted image 20250908154404.png]]
 
 **Explanation:** This query joins three relations to find employees in department 5 working more than 10 hours on DigitalIndia project.
 
@@ -184,7 +183,7 @@ WHERE UPPER(e.fname) = UPPER(d.dependent_name);
 ```
 
 **Result Evidence:**
-
+![[Pasted image 20250908154443.png]]
 
 
 **Explanation:** This query finds employees whose first name matches any of their dependents' names using case-insensitive comparison.
@@ -209,7 +208,7 @@ WHERE UPPER(e1.fname) = UPPER('Priya')
 ```
 
 **Result Evidence:**
-
+![[Pasted image 20250908154511.png]]
 
 
 **Explanation:** This self-join query finds all employees supervised by Priya Patel by matching supervisor SSN.
