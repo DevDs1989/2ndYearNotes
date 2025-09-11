@@ -47,11 +47,6 @@ Consider a statement $x > \phi$:
 - A predicate can be seen as a **propositional function**: it takes a variable as input and outputs a proposition.
 - Notation: $P(x)$, where $P$ is the predicate and $x$ is the subject variable.
 
-### Domain of Discourse
-
-- The **domain of discourse** specifies the set of values that the variable can take.
-- Example: If $x$ is an integer, then we only consider integer values for $x$.
-
 ### Multiple Variables
 
 - Predicates can have more than one variable.
@@ -59,23 +54,8 @@ Consider a statement $x > \phi$:
         - $Q(5, 5): 5 + 5 = 10$ (True)
         - $Q(3, 6): 3 + 6 = 10$ (False)
 
-### Conversion to Propositions
-
-- When all variables in a predicate are replaced with specific values from the domain, it becomes a **proposition** (statement with a definite truth value).
-- Example: $P(x): x$ is a prime number
-    - $P(2)$ is True
-    - $P(4)$ is False
-
-### Use in Logic
-
-- Predicates are used along with quantifiers (universal $\forall$, existential $\exists$) to make general statements about sets of objects.
-
 ---
 
 # Work
-
-- [ ] Review more examples of predicates with different domains.
-- [ ] Practice writing predicates for various properties.
-- [ ] Explore how predicates form the basis for quantified statements.
 
 ---
