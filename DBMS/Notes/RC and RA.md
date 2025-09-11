@@ -1,4 +1,4 @@
----
+
 **Class**: [[DBMS]]
 
 **Title:** RC and RA
@@ -12,7 +12,6 @@
 **Related:**
 # Topic
 
----
 
 # Keywords
 

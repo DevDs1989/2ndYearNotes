@@ -245,3 +245,5 @@ int main(int argc, char *argv[]) {
 
 ```
 ### Result
+
+![[Pasted image 20250911234514.png]]
