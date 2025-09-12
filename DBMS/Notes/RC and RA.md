@@ -82,6 +82,7 @@ Relational Algebra (RA) and Relational Calculus (RC) are two formal languages fo
 ### Cartesian Product ($\times$)
 - Returns all possible combinations of tuples from two relations.
 - Used as a step in join operations.
+- 
 
 ---
 
@@ -168,9 +169,5 @@ $\{ N \mid \exists A, S ( (N, A, S) \in \text{Student} \land A > 17 \land S = 2 
 
 # Work
 
-- [ ] Practice more set operation and join problems.
-- [ ] Write queries in RA, TRC, DRC, and SQL for the same requirement.
-- [ ] Understand safety in relational calculus.
-- [ ] Explore outer joins and their use cases.
 
 ---

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DAA/Lab/Lab4.md",
+                "file": "DBMS/Notes/RC and RA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lab4"
+              "title": "RC and RA"
             }
           }
         ],
@@ -230,11 +230,13 @@
   },
   "active": "0c75c708e3c03fd7",
   "lastOpenFiles": [
+    "DAA/Lab/Lab4.md",
+    "Templates/DAA Lab Template.md",
+    "Templates/AI ML Lab Template.md",
     "frontpage_page-0001.jpg",
     "imgs/Pasted image 20250905021956.png",
     "Untitled.base",
     "imgs/Pasted image 20250908153632.png",
-    "DAA/Lab/Lab4.md",
     "DAA/Lab/Lab 2.md",
     "image.md",
     "Elements of AI/Lab Excercises/Create a simple program for Regression Problem.md",
@@ -260,14 +262,12 @@
     "imgs/Pasted image 20250909141700.png",
     "imgs/Pasted image 20250909141632.png",
     "imgs/Pasted image 20250909141628.png",
-    "imgs/Pasted image 20250909141606.png",
     "Elements of AI/Lab Excercises/Basics of Python Programming with pandas and matplotlib.md",
     "Elements of AI/AI Lab.md",
     "Elements of AI/Elements of AI.md",
     "DBMS/Lab/Experiment 3.md",
     "DBMS/Lab/Experiment 2.md",
     "Untitled 1.base",
-    "DBMS/Notes/Select Query.md",
     "DAA/Lab",
     "DBMS/Lab",
     "imgs",

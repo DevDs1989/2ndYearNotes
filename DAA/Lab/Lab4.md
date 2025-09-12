@@ -1,10 +1,11 @@
 ![[frontpage_page-0001.jpg]]
+<br><br> 
 **Submitted By:**
 **Name:** Devesh Chandra Srivastava
 **SAP ID:** 590017127
 **Subject:** [[Design and Analysis of Algorithms (DAA)]]
 
-
+# Experiment Title
 N activities with their start time and end time are given, WAP to find the solution set having maximum number of non conflicting activities that can be executed within the given time, assuming only a single activity can be performed at a given time.
 ### Code
 
