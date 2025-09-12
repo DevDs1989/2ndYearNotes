@@ -41,15 +41,34 @@ int iterative_binary_search(int arr[], int size, int target) {
     return -1;
 }
 
+void sort(int arr[], int size) {
+    for (int i = 0; i < size - 1; i++) {
+        for (int j = 0; j < size - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+
 int main() {
 
     printf("Name: Devesh\nSap Id: 590017127\n");
-    int size = 100000;
+    int size;
+    printf("Enter the number of elements to insert:");
+    scanf("%d", &size);
     int *arr = (int *)malloc(size * sizeof(int));
     for (int i = 0; i < size; i++) {
         arr[i] = i * 2;
     }
-    int target = 123456;
+    for (int i = 0; i < size; i++) {
+        arr[i] = rand() % (size * 2);
+    }
+    int target;
+    target = arr[rand() % size];
+    sort(arr, size);
 
     clock_t start, end;
     double cpu_time_used;

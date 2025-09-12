@@ -1,4 +1,6 @@
 {
   "cssTheme": "",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "accentColor": "",
+  "textFontFamily": "Times New Roman"
 }
