@@ -1,14 +1,13 @@
-**Class**: 
-
-**Title:** {{title}}
-
-**Date:** {{date}}
-
-**Time:** {{time}}
-
-**Tags:**
-
-**Related:**
+---
+Class:
+Title: "{{title}}"
+date: "{{date}}"
+Time: "{{time}}"
+type:
+  - class-notes
+tags:
+Related:
+---
 # Topic
 
 
