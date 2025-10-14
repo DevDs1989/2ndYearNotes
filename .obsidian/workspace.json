@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBMS/Notes/RC and RA.md",
+                "file": "Operating Systems/Notes/Deadlock.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RC and RA"
+              "title": "Deadlock"
             }
           }
         ],
@@ -95,8 +95,8 @@
             "state": {
               "type": "trash-explorer",
               "state": {},
-              "icon": "trash",
-              "title": "Trash explorer"
+              "icon": "lucide-ghost",
+              "title": "trash-explorer"
             }
           }
         ]
@@ -177,8 +177,8 @@
             "state": {
               "type": "mermaid-toolbar-view",
               "state": {},
-              "icon": "trident-custom",
-              "title": "Mermaid Toolbar"
+              "icon": "lucide-ghost",
+              "title": "mermaid-toolbar-view"
             }
           },
           {
@@ -202,6 +202,16 @@
             "state": {
               "type": "github-copilot-chat-view",
               "state": {},
+              "icon": "lucide-ghost",
+              "title": "github-copilot-chat-view"
+            }
+          },
+          {
+            "id": "334f5d5eaa54e6d1",
+            "type": "leaf",
+            "state": {
+              "type": "github-copilot-chat-view",
+              "state": {},
               "icon": "bot-message-square",
               "title": "Copilot Chat"
             }
@@ -211,7 +221,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 219.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -224,14 +234,16 @@
       "command-palette:Open command palette": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-trash-explorer:Open trash explorer": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-trash-explorer:Open trash explorer": false
     }
   },
   "active": "0c75c708e3c03fd7",
   "lastOpenFiles": [
-    "DBMS/Lab/Experiment 3.md",
+    "Operating Systems/Operating Systems.md",
+    "Operating Systems/Notes/Deadlock.md",
     "DBMS/Notes/RC and RA.md",
+    "DBMS/Lab/Experiment 3.md",
     "DAA/Notes/Greedy Algorithms.md",
     "2015-09-20.md",
     "DAA/Notes/Divide and Conquer.md",
@@ -259,8 +271,6 @@
     "DAA/Lab/Lab 3.md",
     "imgs/Pasted image 20250911234514.png",
     "Elements of AI/Notes/Linear Regression.md",
-    "Elements of AI/Notes/Logical Systems.md",
-    "Elements of AI/Notes/Predicates.md",
     "imgs/Pasted image 20250909141710.png",
     "imgs/Pasted image 20250909141707.png",
     "imgs/Pasted image 20250909141704.png",
