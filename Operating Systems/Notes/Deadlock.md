@@ -130,6 +130,20 @@ If deadlocks are not prevented or avoided, the system can:
 | Ignore            | Do nothing                                                    | Simple                     | Risk of system hang               |
 
 ---
+### Example
+
+
+| Process | Allocation | Max Need | Available | Remaining |
+| ------- | ---------- | -------- | --------- | --------- |
+|         | X Y Z      | X Y Z    | X Y Z     | X Y Z     |
+| P 1     | 1 0 2      | 6 5 3    | 1 3 1     | 5 5 1     |
+| P 2     | 3 1 0      | 4 2 1    | 4 4 1     | 1 1 1     |
+| P 3     | 0 1 1      | 5 1 2    | 5 4 2     | 5 0 1     |
+| P 4     | 1 0 1      | 1 0 2    | 6 4 4     | 0 0 1     |
+| P 5     | 1 0 2      | 5 2 3    | 7 4 6     | 5 2 1     |
+| Total   | 6 2 6      |          |           |           |
+
+
 
 ## Tags
 

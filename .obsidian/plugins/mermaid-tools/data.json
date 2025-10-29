@@ -786,7 +786,7 @@
     }
   ],
   "customCategories": [],
-  "selectedCategoryId": "entityRelationshipDiagram",
+  "selectedCategoryId": "flowchart",
   "defaultCategorySortOrders": {
     "sequenceDiagram": 1,
     "flowchart": 0,
