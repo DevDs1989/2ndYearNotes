@@ -66,6 +66,18 @@ DROP INDEX emp_lastname_upper_idx;
 ### Comparison between indexing and non indexing
 
 1) Query to insert 10,000 values  
+
+```sql 
+CREATE TABLE employees (
+    employee_id   SERIAL PRIMARY KEY,
+    first_name    VARCHAR(30) NOT NULL,
+    last_name     VARCHAR(30) NOT NULL,
+    dob           DATE,
+    salary        NUMERIC(10, 2),
+    department_id INT
+);
+```
+
 ```sql
 INSERT INTO employees (first_name, last_name, dob, salary, department_id)
 SELECT
@@ -90,6 +102,7 @@ EXPLAIN ANALYZE SELECT * FROM employees WHERE last_name = 'Last_250';
 3) Create Index
 ```sql 
 CREATE INDEX emp_lastname_idx ON employees (last_name);
+EXPLAIN ANALYZE SELECT * FROM employees WHERE last_name = 'Last_250';
 ```
 
 #### Results
